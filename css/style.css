@@ -125,9 +125,9 @@ a {
 }
 
 .bg {
-  background: -webkit-gradient(linear, left top, right top, from(#010202), color-stop(45%, #010202), color-stop(90%, rgba(1, 2, 2, 0.2))), url(coverimage.jpg) right center no-repeat;
-  background: linear-gradient(90deg, #010202 0%, #010202 45%, rgba(1, 2, 2, 0.2) 90%), url(coverimage.jpg) right center no-repeat;
+  background: url(../img/coverimage.jpg) right center, #010202;
   background-size: contain;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
@@ -200,26 +200,17 @@ a {
 
 @media (max-width: 1500px) {
   .bg {
-    background: url(img/coverimage.jpg) center right no-repeat, #010202;
+    background: url(../img/coverimage.jpg) center right, #010202;
     background-size: 55%;
+    background-repeat: no-repeat;
   }
 }
 
 @media (max-width: 1100px) {
   .bg {
-    background: url(img/coverimage.jpg) center right no-repeat, #010202;
+    background: url(../img/coverimage.jpg) center right, #010202;
     background-size: 45%;
-  }
-  .main {
-    padding: 18% 0px;
-    height: calc(100vh - 156px);
-  }
-}
-
-@media (max-width: 1100px) {
-  .bg {
-    background: url(img/coverimage.jpg) center right no-repeat, #010202;
-    background-size: 45%;
+    background-repeat: no-repeat;
   }
   .main {
     padding: 18% 0px;
@@ -229,8 +220,9 @@ a {
 
 @media (max-width: 865px) {
   .bg {
-    background: url(img/coverimage.jpg) center bottom no-repeat, #010202;
+    background: url(../img/coverimage.jpg) center bottom, #010202;
     background-size: 55%;
+    background-repeat: no-repeat;
   }
   .main {
     padding: 2% 18% 0 18%;
@@ -246,8 +238,9 @@ a {
 
 @media (max-width: 768px) {
   .bg {
-    background: url(img/coverimage.jpg) center bottom no-repeat, #010202;
+    background: url(../img/coverimage.jpg) center bottom, #010202;
     background-size: 60%;
+    background-repeat: no-repeat;
   }
   .main {
     padding: 2% auto 0 auto;
@@ -263,8 +256,9 @@ a {
 
 @media (max-width: 576px) {
   .bg {
-    background: url(img/coverimage.jpg) center bottom no-repeat, #010202;
+    background: url(../img/coverimage.jpg) center bottom, #010202;
     background-size: 85%;
+    background-repeat: no-repeat;
   }
   .main {
     padding: 1% 5px 0 15px;
@@ -307,7 +301,7 @@ a {
 
 @media (max-width: 375px) {
   .bg {
-    background: url(img/coverimage.jpg) bottom no-repeat, #010202;
+    background: url(../img/coverimage.jpg) bottom no-repeat, #010202;
     background-size: 400px;
     padding-bottom: 450px;
   }
