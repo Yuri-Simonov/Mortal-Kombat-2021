@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<title>Mortal Kombat</title>
+</head>
+
+<body>
+	<div class="bg" id="bg">
+		<div class="container">
+			<div class="header">
+				<div class="header__logo">
+					<a href="#">
+						<img src="img/КиноПульс.svg" alt="Лого сайта">
+					</a>
+				</div>
+				<div class="header__user">
+					<a href="#">
+						<span class="header__user_name">Юрий</span>
+					</a>
+					<img src="img/man.jpg" alt="Фото пользователя" class="header__user_image img">
+				</div>
+			</div>
+			<div class="main">
+				<div class="logo">
+					<img class="logo-film" src="img/film-logo.jpg" alt="Mortal Kombat">
+				</div>
+				<div class="info">
+					<span class="info__year">2021</span>
+					<span class="info__genre">боевик, фэнтези, фантастика</span>
+					<span class="info__country">США</span>
+					<span class="info__old">18+</span>
+				</div>
+				<div class="about">
+					<p>Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется
+						только сильнейший</p>
+				</div>
+				<div class="btn">
+					<div class="btn__first">
+						<a data-fancybox data-touch="false" href="#modal">Предзаказ фильма</a>
+					</div>
+					<div class="btn__second">
+						<a data-fancybox href="https://youtu.be/1ar_V1_uatA">
+							<img class="play" src="img/play.svg" alt="play">
+							<span class="a-text">Смотреть трейлер</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---->
+	<div id="modal">
+		<div class="content-header">
+			<button class="btn" onclick="javascript:$('#more').toggle();;">Mortal Kombat</button>
+		</div>
+		<div class="content-scroll">
+			<p>
+				Боец смешанных единоборств Коул Янг не раз соглашался проиграть за деньги. Он не знает о своем наследии
+				и почему император Внешнего Мира Шан Цзун посылает своего лучшего воина, могущественного криомансера
+				Саб-Зиро, на охоту за Коулом. Янг боится за безопасность своей семьи, и майор спецназа Джакс, обладатель
+				такой же отметки в виде дракона, как и у Коула, советует ему отправиться на поиски Сони Блейд. Вскоре он
+				оказывается в храме Лорда Рейдена, Старшего Бога и защитника Земного Царства, который дает убежище тем,
+				кто носит метку. Здесь Коул тренируется с опытными воинами Лю Каном, Кун Лао и наемником-изгоем Кано,
+				готовясь вместе с величайшими чемпионами Земли противостоять врагам из Внешнего Мира в битве за
+				вселенную. Но сможет ли Коул приложить все усилия и раскрыть в себе аркану — могущественную силу его
+				души, чтобы не только спасти свою семью, но и остановить Внешний Мир раз и навсегда?
+			</p>
+			<input type="email" name="email" placeholder="Введите email для подписки на рассылку" class="input">
+		</div>
+	</div>
+	<!---->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
